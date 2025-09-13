@@ -1,3 +1,8 @@
+beforeAll(() => {
+  console.log = () => {};
+  console.warn = () => {};
+  console.error = () => {};
+});
 import { render, screen, fireEvent } from '@testing-library/react';
 import CadastroUsuarios from '../components/CadastroUsuarios';
 import EditarUsuario from '../components/EditarUsuario';
